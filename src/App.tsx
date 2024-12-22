@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Auth } from "./pages/Auth";
 import { Blog } from "./pages/Blog";
+import {Appbar} from "./pages/Appbar"
 
 import { RecoilRoot } from "recoil";
 import { Add_post } from "./pages/Add_post";
@@ -10,10 +11,11 @@ function App() {
 
   return (
     <>
+    <Appbar />
       <BrowserRouter>
         <RecoilRoot>
-          <Routes>
-          <Route path="/" element={
+          <Routes>            
+          <Route path="/singin" element={
             <div>
               hello world
             </div>
