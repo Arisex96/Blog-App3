@@ -26,7 +26,11 @@ export const Blog = () => {
 
         const response = await axios.get(url, config);
         set_post_list(response.data);
+        if(response.data)
         setLoading(false);
+        else
+        setLoading(true)
+        
       } catch (e) {
         console.log(e);
       }
