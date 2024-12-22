@@ -13,6 +13,11 @@ function App() {
       <BrowserRouter>
         <RecoilRoot>
           <Routes>
+          <Route path="/" element={
+            <div>
+              hello world
+            </div>
+          } />
             <Route path="/signin" element={<Auth />} />
             <Route path="/signup" element={<Auth />} />
             <Route path="/get-blogs" element={<Blog />} />
